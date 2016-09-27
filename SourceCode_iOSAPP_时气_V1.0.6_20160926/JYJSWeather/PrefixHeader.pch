@@ -1,0 +1,189 @@
+//
+//  PrefixHeader.pch
+//  JYJSWeather
+//
+//  Created by DEV-IOS-2 on 16/5/11.
+//  Copyright © 2016年 Hangzhou Jiyuan Jingshe Trade Co,. Ltd. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+// 各模块高度 + 间隔高度
+#define ModuleWeatherHeight ((ScreenHeight == 480 ? 480 :(ScreenHeight == 568 ? (ScreenHeight-ScreenWidth/3) : (ScreenHeight == 736 ? 598 : (ScreenHeight == 512 ? 1024 : (ScreenHeight == 1024 ? (ScreenHeight-ScreenWidth/3):(ScreenHeight-ScreenWidth/3)))))) + GapHeight)
+#define ModuleWallpaperHeight ((ScreenHeight == 480 ? 480 : (ScreenHeight == 568 ? 568:(ScreenHeight == 736 ? 598 :529))) + GapHeight)
+#define ModuleCalendarHeight ((ScreenHeight == 736 ? 598 : 580) + GapHeight)
+
+#define ModuleNarrowWeatherHeight 138
+#define ModuleNarrowWallpaperHeight (ScreenWidth/3)
+#define ModuleNarrowCalendarHeight 270.0
+#define GapHeight 4
+#define LeftWidth ScreenWidth * 0.8
+
+// 首页壁纸缩略图尺寸
+#define narrowImage_width 10000.0
+#define narrowImage_height 10000.0
+// 加载的壁纸尺寸
+#define WallPaper_width 10000.0
+#define WallPaper_height 10000.0
+#define WallPaperScale 1.77
+// 壁纸需要的种类
+#define WallPaperKindCount 3
+#define ShowCalendarCountDay 22
+// 显示未来几天的天气
+#define weatherDays 10
+#define navigationBackViewAlpha 0.8
+//获取当前设备系统版本
+#define SystemVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+#define SYSTEM_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+
+//获取设备物理高度
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+//获取设备物理宽度
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+//设备Scale
+#define ScreenScale [UIScreen mainScreen].scale
+//设备分辨率宽度上的
+#define ScreenPixelWidth  ScreenWidth*ScreenScale
+//设备分辨率高度上的
+#define ScreenPixelHeight  ScreenHeight*ScreenScale
+//底部tabbar高度
+#define UITabBarHeight 49
+//底部tabbar高度
+#define topTabbrHeight 64
+
+//布局机型判断
+#define IS_IOS6 (SYSTEM_VERSION >= 6.0 && SYSTEM_VERSION < 7)
+#define IS_IOS7 (SYSTEM_VERSION >= 7.0 && SYSTEM_VERSION < 8.0)
+#define IS_IOS8 (SYSTEM_VERSION >= 8.0 && SYSTEM_VERSION < 9.0)
+#define IS_IOS9 (SYSTEM_VERSION >= 9.0 && SYSTEM_VERSION < 10.0)
+
+/** 设备判断 */
+#define IS_IPHONE [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone
+#define IS_PAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+/** iPhone的型号 */
+#define IS_IPHONE4 ([[UIScreen mainScreen] bounds].size.height == 480)
+#define IS_IPHONE5 ([[UIScreen mainScreen] bounds].size.height == 568)
+#define IS_IPHONE6 ([[UIScreen mainScreen] bounds].size.height == 667)
+#define IS_IPHONE6_PLUS ([[UIScreen mainScreen] bounds].size.height == 736)
+
+/** APP版本号 */
+#define APP_VERSION  [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+/** APP BUILD 版本号 */
+#define APP_BUILD_VERSION  [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
+
+/** APP名字 */
+#define APP_DISPLAY_NAME  [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"]
+
+//藏历文件
+#define JYJSCALENDAR @"jyjscalendar.zip"
+#define JYJSCALENDARDB @"jyjscalendar.db"
+//筛选后的壁纸文件
+#define SelectedWallpaperList @"SelectedWallpaperList.zip"
+#define SelectedWallpaperListDB @"SelectedWallpaperList.db"
+
+//藏历视图
+#define PADDING (ScreenWidth * 0.06)
+#define CALENDARBTNPADDING (ScreenWidth / 15)
+#define TEXTCOLOR [UIColor colorWithRed:127/255.0 green:114/255.0 blue:73/255.0 alpha:1]
+#define BTNTITLECOLOR UIColorFromRGB(0xdc9f35)
+#define TEXTNUMBERONE 20
+#define TEXTNUMBERTWO 18
+#define TEXTNUMBERTHREE 17
+#define TextNumberThree 16
+#define TEXTNUMBERFOUR 14
+#define TEXTNUMBERFIVE 9
+#define TEXTNUMBERLEAST 10
+#define TEXTCOLORRED UIColorFromRGB(0xc31214)
+#define TEXTCOLORBLACK UIColorFromRGB(0x72706b)
+#define TEXTCOLORBLACKFONT UIColorFromRGB(0x000000)
+#define CALENDARFONTKAITI @"Kaiti"
+#define CALENDARFONTHEITI @"SimHei"
+#define TOPBUTTONHEIGHT 10
+#define pushFontSize 16    //日历选择框大小
+#define DownHeight 0
+#define AlmanacViewHeight 477
+#define AlmanacDownHeight 30
+
+// location 城市管理
+#define EditHeight 40
+#define EditWidth (160)
+// 当前城市代号
+#define LocationCity @"当前城市"
+
+#define TOKENURL @"http://jyjs.hk/service/sq/user.asmx/AppRegister"
+// AppRegister
+#define AppRegisterUrl @"http://jyjs.hk/service/sq/user.asmx/AppRegister"
+
+// 根据经纬度获取天气数据
+#define WeatherUrl @"http://jyjs.hk/service/sq/Weather.asmx/Proxy"
+#define WeatherUrlPart @"'/geolookup/conditions/forecast10day/q/%f,%f.json'"
+
+//根据字符串查找城市
+#define SearchCityUrlPart @"'/geolookup/q/China/%@.json'"
+
+//根据l 获取天气数据
+#define WeatherUrlAccordingL @"'/geolookup/conditions/forecast10day/%@.json'"
+#define WeatherAqi @"http://jyjs.hk/service/sq/weather.asmx/Aqi?token='%@'&city='%@'"
+
+// 根据经纬度获取一个城市一天的天气数据
+#define WeatherOneCityUrlPart @"'/geolookup/q/%f,%f.json'"
+
+// 反馈接口
+#define FeedbackUrl @"http://jyjs.hk/service/sq/feedback.asmx/setNewFeedBack"
+#define GetFeedBackCategories @"http://jyjs.hk/service/sq/feedback.asmx/getFeedBackCategories"
+// 隐私条款
+#define PrivacyPolicyUrl @"http://jyjs.hk/service/sq/termofservice.aspx"
+// 获取日出日落时间的接口
+#define SunTimesInPeriod @"http://jyjs.hk/service/sq/Weather.asmx/getSunTimesInPeriod"
+
+// 获取图片列表的接口
+#define WallPaperList @"http://jyjs.hk/service/sq/WellPaper.asmx/getWellPaperList"
+// 表情接口
+#define ExpressionUrl @"http://jyjs.hk/service/sq/emoji.aspx"
+//#define ExpressionUrl @"http://192.168.10.6:800/service/sq/emotion.aspx"
+// 获取单张图片
+#define wallPaperImage @"http://jyjs.hk/service/sq/WellPaper.asmx/getImage"
+
+#define  CacheWeather @"cacheWeather"
+#define  CacheWallpaperBig @"cacheWallpaperBig"
+#define  CacheWallpaperLittle @"cacheWallpaperLittle"
+
+#endif /* PrefixHeader_pch */
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "FQYRefreshViewCommon.h"
+#import "FMDataBase.h"
+//#import "NetWorkMonitor.h"
+#import "ReachManager.h"
+#import "CacheDataManager.h"
+#import "Help.h"
+#import "Datetime.h"
+#import "JSNet.h"
+
+//在调试的时候，会输出（格式：文件名:行号）日志。在Release正式版本的时候，会关闭日志输出。
+#ifndef __OPTIMIZE__
+#define NSLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define NSLog(FORMAT, ...) nil
+#define debugMethod()
+#endif
+
+
+
+#endif
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Monday</key>
+	<string>星期一</string>
+	<key>Tuesday</key>
+	<string>星期二</string>
+	<key>Wednesday</key>
+	<string>星期三</string>
+	<key>Thursday</key>
+	<string>星期四</string>
+	<key>Friday</key>
+	<string>星期五</string>
+	<key>Saturday</key>
+	<string>星期六</string>
+	<key>Sunday</key>
+	<string>星期日</string>
+</dict>
+</plist>

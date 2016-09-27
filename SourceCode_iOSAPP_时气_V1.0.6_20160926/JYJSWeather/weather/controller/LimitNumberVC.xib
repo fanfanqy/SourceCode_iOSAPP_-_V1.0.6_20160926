@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SimHei.ttf">
+            <string>SimHei</string>
+            <string>SimHei</string>
+            <string>SimHei</string>
+            <string>SimHei</string>
+            <string>SimHei</string>
+            <string>SimHei</string>
+            <string>SimHei</string>
+            <string>SimHei</string>
+            <string>SimHei</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LimitNumberVC">
+            <connections>
+                <outlet property="city" destination="GSh-GM-IO8" id="RdY-vy-cuL"/>
+                <outlet property="collectionView" destination="Q5J-hM-S9h" id="1T6-Co-SN7"/>
+                <outlet property="limitTime" destination="Wf5-Pc-fLw" id="cgL-jI-arS"/>
+                <outlet property="max_min_temp" destination="z7B-gn-Vd1" id="Z7P-ZH-NXo"/>
+                <outlet property="nowTemp" destination="nut-kZ-C62" id="JqX-Wl-1ng"/>
+                <outlet property="number" destination="bXm-bC-zb8" id="DFf-Bw-PH9"/>
+                <outlet property="pollution" destination="u1H-H0-FZu" id="Q8J-w9-Fo5"/>
+                <outlet property="suntime" destination="I8u-Ta-Ky1" id="nv4-kV-GxM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weather_txt" destination="nwa-Qr-LCy" id="3gp-1l-7kh"/>
+                <outlet property="week" destination="7ES-xa-ksM" id="NVd-BC-ms3"/>
+                <outlet property="wind" destination="UvP-Hk-CEw" id="GDZ-qa-agF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXm-bC-zb8">
+                    <rect key="frame" x="18" y="86" width="105" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="VhI-09-HmR"/>
+                        <constraint firstAttribute="width" constant="114" id="eBy-v0-9Ed"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SimHei" family="SimHei" pointSize="42"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="eBy-v0-9Ed"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ES-xa-ksM">
+                    <rect key="frame" x="143" y="86" width="437" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="RYL-Zv-bfj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SimHei" family="SimHei" pointSize="30"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工作日" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wf5-Pc-fLw">
+                    <rect key="frame" x="18" y="163" width="51" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="zVu-O6-eyW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SimHei" family="SimHei" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天气状况:--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwa-Qr-LCy">
+                    <rect key="frame" x="20" y="302" width="560" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="R6D-aS-fBH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SimHei" family="SimHei" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="风向风力:--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvP-Hk-CEw">
+                    <rect key="frame" x="20" y="331" width="560" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="vlm-Kk-fyB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SimHei" family="SimHei" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="限行时间" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dq-XY-hf7">
+                    <rect key="frame" x="18" y="137" width="562" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="hKc-al-9pv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SimHei" family="SimHei" pointSize="18"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u1H-H0-FZu">
+                    <rect key="frame" x="85" y="211" width="32" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="D51-ig-LDy"/>
+                        <constraint firstAttribute="height" constant="17" id="nX7-tV-xkP"/>
+                    </constraints>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Q5J-hM-S9h">
+                    <rect key="frame" x="0.0" y="520" width="600" height="80"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="Hrz-7h-sWj"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DO1-Ye-PRh">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1E1-ku-gcF"/>
+                        <outlet property="delegate" destination="-1" id="E0q-Sc-bPw"/>
+                    </connections>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温度范围:--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7B-gn-Vd1">
+                    <rect key="frame" x="20" y="273" width="560" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ubY-aY-Hr8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SimHei" family="SimHei" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日出日落:--:--/--:--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8u-Ta-Ky1">
+                    <rect key="frame" x="18" y="360" width="562" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="NY2-c7-Dpz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SimHei" family="SimHei" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSh-GM-IO8">
+                    <rect key="frame" x="20" y="242" width="560" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="dZE-fh-yA6"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="城市">
+                            <attributes>
+                                <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="17" name="STHeitiSC-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nut-kZ-C62">
+                    <rect key="frame" x="18" y="204" width="47" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="WxU-nH-2Id"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SimHei" family="SimHei" pointSize="35"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7ES-xa-ksM" secondAttribute="trailing" constant="20" id="0RI-YP-iCC"/>
+                <constraint firstItem="I8u-Ta-Ky1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="18" id="11N-fk-klg"/>
+                <constraint firstItem="Wf5-Pc-fLw" firstAttribute="top" secondItem="4Dq-XY-hf7" secondAttribute="bottom" constant="5" id="1XT-hS-DlH"/>
+                <constraint firstItem="GSh-GM-IO8" firstAttribute="top" secondItem="nut-kZ-C62" secondAttribute="bottom" constant="8" id="2iN-Yi-MMJ"/>
+                <constraint firstItem="bXm-bC-zb8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="18" id="38a-TL-Cq3"/>
+                <constraint firstAttribute="trailing" secondItem="I8u-Ta-Ky1" secondAttribute="trailing" constant="20" id="3C0-rI-lZk"/>
+                <constraint firstItem="7ES-xa-ksM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="86" id="7n1-Km-QaT"/>
+                <constraint firstItem="UvP-Hk-CEw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="ADz-I3-Bcm"/>
+                <constraint firstAttribute="trailing" secondItem="nwa-Qr-LCy" secondAttribute="trailing" constant="20" id="DxY-Bl-bHu"/>
+                <constraint firstItem="7ES-xa-ksM" firstAttribute="leading" secondItem="bXm-bC-zb8" secondAttribute="trailing" constant="20" id="EA2-gp-rHx"/>
+                <constraint firstAttribute="bottom" secondItem="Q5J-hM-S9h" secondAttribute="bottom" id="Hmq-cs-V2U"/>
+                <constraint firstItem="z7B-gn-Vd1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="L3E-MT-wPh"/>
+                <constraint firstItem="UvP-Hk-CEw" firstAttribute="top" secondItem="nwa-Qr-LCy" secondAttribute="bottom" constant="8" id="LDD-TH-6wJ"/>
+                <constraint firstItem="I8u-Ta-Ky1" firstAttribute="top" secondItem="UvP-Hk-CEw" secondAttribute="bottom" constant="8" id="LQr-20-kuP"/>
+                <constraint firstItem="z7B-gn-Vd1" firstAttribute="top" secondItem="GSh-GM-IO8" secondAttribute="bottom" constant="10" id="Mo6-Rb-jKr"/>
+                <constraint firstItem="7ES-xa-ksM" firstAttribute="leading" secondItem="bXm-bC-zb8" secondAttribute="trailing" constant="20" id="QTX-NE-e3b"/>
+                <constraint firstItem="Q5J-hM-S9h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Tv1-Uk-tGj"/>
+                <constraint firstAttribute="trailing" secondItem="Q5J-hM-S9h" secondAttribute="trailing" id="VzF-Ew-0e3"/>
+                <constraint firstAttribute="trailing" secondItem="GSh-GM-IO8" secondAttribute="trailing" constant="20" id="Wd3-5X-4H5"/>
+                <constraint firstItem="nut-kZ-C62" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="18" id="Wmx-Kv-gkn"/>
+                <constraint firstItem="bXm-bC-zb8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="86" id="aMf-9X-akd"/>
+                <constraint firstItem="Wf5-Pc-fLw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="18" id="cHm-Te-d8g"/>
+                <constraint firstItem="nwa-Qr-LCy" firstAttribute="top" secondItem="z7B-gn-Vd1" secondAttribute="bottom" constant="8" id="cUn-DA-JFh"/>
+                <constraint firstItem="nwa-Qr-LCy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="d4a-vT-3QL"/>
+                <constraint firstAttribute="trailing" secondItem="4Dq-XY-hf7" secondAttribute="trailing" constant="20" id="dvq-TX-e3m"/>
+                <constraint firstAttribute="trailing" secondItem="UvP-Hk-CEw" secondAttribute="trailing" constant="20" id="dyJ-RO-8ay"/>
+                <constraint firstItem="nut-kZ-C62" firstAttribute="top" secondItem="Wf5-Pc-fLw" secondAttribute="bottom" constant="20" id="dze-hu-imG"/>
+                <constraint firstAttribute="trailing" secondItem="z7B-gn-Vd1" secondAttribute="trailing" constant="20" id="gjw-LK-yIR"/>
+                <constraint firstItem="u1H-H0-FZu" firstAttribute="leading" secondItem="nut-kZ-C62" secondAttribute="trailing" constant="20" id="ka2-u2-lGZ"/>
+                <constraint firstItem="7ES-xa-ksM" firstAttribute="centerY" secondItem="bXm-bC-zb8" secondAttribute="centerY" id="mR0-u9-62Q"/>
+                <constraint firstItem="z7B-gn-Vd1" firstAttribute="leading" secondItem="GSh-GM-IO8" secondAttribute="leading" id="pdI-Zt-SED"/>
+                <constraint firstItem="u1H-H0-FZu" firstAttribute="centerY" secondItem="nut-kZ-C62" secondAttribute="centerY" id="ty8-iW-9rY"/>
+                <constraint firstItem="4Dq-XY-hf7" firstAttribute="top" secondItem="7ES-xa-ksM" secondAttribute="bottom" constant="10" id="uBA-OJ-v0n"/>
+                <constraint firstItem="4Dq-XY-hf7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="18" id="uwn-HW-Hd0"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="QTX-NE-e3b"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

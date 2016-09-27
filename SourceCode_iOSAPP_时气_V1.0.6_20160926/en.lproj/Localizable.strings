@@ -1,0 +1,79 @@
+/* 
+  Localizable.strings
+  JYJSWeather
+
+  Created by DEVP-IOS-03 on 16/6/7.
+  Copyright © 2016年 Hangzhou Jiyuan Jingshe Trade Co,. Ltd. All rights reserved.
+*/
+"CFBundleDisplayName"   = "Shi Qi";
+"register"              = "Register";
+"login"                 = "Sign in";
+"logout"                = "Sign out";
+"username"              = "User name";
+"cancel"                = "Cancel";
+"confirm"               = "Confirm";
+"setting"               = "Settting";
+"ok"                    = "OK";
+"yes"                   = "Yes";
+"no"                    = "No";
+
+"please pull down refresh data" = "Pull down to refresh";
+"alert"                 = "Alert";
+"complete"              = "Completed";
+"submit"                = "Submit";
+"submit success"        = "Submit successed";
+"submit failed"         = "Submit failed";
+"submit again"          = "Unable to submit your request. Please, try again";
+"empty content title"   = "'Content' field can not be empty";
+"empty content"         = "Please fill 'contact'field first";
+"noselect feedkind title" ="Please select cateogry of feedback";
+"noselect feedkind"   ="Please select cateogry of feedback";
+
+"search failed"         ="Search failed";
+"search again"          ="Search again please";
+
+"network failed"        ="Check network first";
+"network wifi"          ="WIFI";
+"network noWifi"        ="Cellular";
+"save success"          ="Save successed";
+"save error"            ="Encount error when save";
+"download success"      ="Download successed";
+"download failed"       ="Download failed";
+"download"              ="Download";
+"loading error"         ="Loading error";
+
+"location services off title" ="Please turn on location services to use ShiQi";
+"location services off" ="Location services is off";
+"location services check" = "Please turn on location services or add at least one location to location list";
+"location off"          ="Location service is Off";
+"location success"      ="Located";
+"location failed"       ="Can not be Located";
+
+"city management"       ="Location management";
+"city list"             ="Locations";
+"edit"                  ="Edit";
+"already add"           = "Existed in location list";
+"add"                   = "Add";
+"location city"         ="Current location";
+"search"                ="Search";
+"system settings"       ="Settings";
+"my city"               ="My locations";
+"my wallpaper"          ="Wallpaper";
+"prefer use"            ="Use primary weather source";
+"about us"              ="About Us";
+"app version"           ="Version";
+"app guide"             ="Intro";
+"app privacypolicy"     ="Term of service";
+"wallpaper"             ="Wallpaper";
+"clear"                 ="Clear";
+"clear alert title"     ="Are you sure to clear wallpaper cache?";
+"clear alert"           ="The current wallpaper cache:%0.2fM,total %lu amount of sheets\nWhether to remove?";
+"weather"               ="Weather";
+"real-time weather"     = "Realtime weather";
+"calendar"              ="Shi Qi";
+"feedback"              = "Feedback";
+"The fault" = "The Fault";
+"Advice" = "Advices";
+"consulting" = "Consulting";
+"other" = "Other";
+"language key"          = "1";

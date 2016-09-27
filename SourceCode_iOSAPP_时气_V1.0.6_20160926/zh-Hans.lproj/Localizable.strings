@@ -1,0 +1,76 @@
+/* 
+  Localizable.strings
+  JYJSWeather
+
+  Created by DEVP-IOS-03 on 16/6/7.
+  Copyright © 2016年 Hangzhou Jiyuan Jingshe Trade Co,. Ltd. All rights reserved.
+*/
+"CFBundleDisplayName"   = "时气";
+
+"register"              = "注册";
+"login"                 = "登录";
+"logout"                = "退出账号";
+"username"              = "用户名";
+"cancel"                = "取消";
+"confirm"               = "确定";
+"setting"               = "设置";
+"ok"                    = "确定";
+"yes"                   = "Yes";
+"no"                    = "No";
+
+"please pull down refresh data" = "请下拉刷新请求数据";
+"alert"                 = "提示";
+"complete"              = "完成";
+"submit"                = "提交";
+"submit success"        = "提交成功";
+"submit failed"         ="提交失败";
+"submit again"          ="请再次提交";
+"empty content title"   ="缺少内容";
+"empty content"         = "请输入文字内容";
+"noselect feedkind title" ="没有选中的反馈模块";
+"noselect feedkind"     ="请点选一个反馈模块";
+"search failed"         ="搜索失败";
+"search again"          ="请更换搜索词后重新搜索";
+"network failed"        ="请检查网络";
+"network wifi"          ="当前处于WIFI网络";
+"network noWifi"        ="移动蜂窝网络";
+"download success"      ="下载成功";
+"save success"          ="保存成功";
+"save error"            ="保存失败";
+"download failed"       ="下载失败,请重新尝试";
+"download"              ="下载";
+"loading error"         ="加载失败";
+"location services off title" ="需打开定位服务,允许'时气'访问您当前位置";
+"location services off" ="请打开 '设置-隐私-定位服务' 以便我们为您提供更好的服务";
+"location services check" ="请打开 '设置-隐私-定位服务' 或添加城市,为您提供更好的服务";
+"location off"          ="请允许'时气'访问您的位置,以便我们为您提供更好的服务";
+"location success"      ="定位成功";
+"location failed"       ="定位失败";
+
+"city list"             ="我的城市列表";
+"edit"                  ="编辑";
+"already add"           ="已添加";
+"add"                   ="添加";
+"location city"         ="当前定位城市";
+"search"                ="搜索添加城市";
+"system settings"       ="系统设置";
+"my city"               ="城市管理";
+"my wallpaper"          ="壁纸管理";
+"clear"                 ="清除";
+"clear alert title"     ="确定清除壁纸缓存?";
+"clear alert"           ="当前壁纸缓存:%0.2fM,共%lu张\n是否清除?";
+"prefer use"            ="优先使用主气象源";
+"real-time weather"     = "显示实时气象";
+"about us"              ="关于我们";
+"app guide"             ="软件介绍";
+"app version"           ="软件版本";
+"app privacypolicy"     ="使用条款及隐私政策";
+"wallpaper"             ="壁纸";
+"calendar"              ="吉祥缘起通历";
+"feedback"              = "意见反馈";
+
+"The fault" = "故障";
+"Advice" = "建议";
+"consulting" = "咨询";
+"other" = "其它";
+"language key"          = "0";
